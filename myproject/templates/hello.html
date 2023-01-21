@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Welcome {{username | upper }}</h1>
+    <h2>
+        Favourite Designer:<br/>
+        {% for style in designer %}
+
+            {% if style == 19 %}
+                {{ style + 180}} <br/>
+            {% else %}
+                {{ style }}<br/>
+            {% endif %}
+
+        {% endfor %}
+    </h2>
+    <br>
+    {{ designer.1 | reverse}}
+    </br>
+
+</body>
