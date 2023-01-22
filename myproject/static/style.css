@@ -1,3 +1,22 @@
-p.flow {
-    background-color: red;
+p {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+
+body {
+    background-color: teal;
+    /* text-align: center; */
+}
+
+#footer {
+    background-color: #FFFDD0;
+}
+
+#rev {
+    background-color: #FFFDD0;
+}
+
+#center-body {
+    text-align: center;
 }

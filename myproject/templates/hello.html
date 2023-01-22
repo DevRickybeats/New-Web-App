@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
     <title>{{ title }}</title>
 </head>
-<body>
+<body id="center-body" >
     <h1>Welcome {{username | upper }}</h1>
     <h2>
         Favourite Designer:<br/>
@@ -17,7 +19,7 @@
 
         {% endfor %}
     </h2>
-    <br>
+    <br id="rev">
     {{ designer.1 | reverse}}
     </br>
 

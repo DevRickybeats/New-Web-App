@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from flask import url_for
 
 app = Flask(__name__)
 
@@ -25,3 +26,15 @@ def user(name):
                            title= title,
                            designer= designer
                            )
+    
+@app.route("/work")
+def work():
+    title = 'Defined'
+    joy = "Everywhere"
+    items = ['item 1', 'item 2', 'item 3']
+    stuff =  "New Things"
+    return render_template("work.html",
+                           joy=joy,
+                           title=title,
+                           items=items,
+                           stuff=stuff)
